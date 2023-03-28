@@ -24,25 +24,24 @@ class MainActivity : AppCompatActivity() {
 
         five_image.setOnClickListener {
             totalAmount += 0.05
-            amount_text.text = "$${totalAmount}"
+            amount_text.text = String.format("$%.2f", totalAmount)
         }
 
         ten_image.setOnClickListener {
             totalAmount += 0.10
-            amount_text.text = "$${totalAmount}"
+            amount_text.text = String.format("$%.2f", totalAmount)
         }
 
         quarter_image.setOnClickListener {
             totalAmount += 0.25
-            amount_text.text = "$${totalAmount}"
+            amount_text.text = String.format("$%.2f", totalAmount)
         }
 
         dollar_image.setOnClickListener {
             totalAmount += 1.0
-            amount_text.text = "$${totalAmount}"
+            amount_text.text = String.format("$%.2f", totalAmount)
         }
     }
-
 
 
     private fun binding (){
@@ -52,8 +51,5 @@ class MainActivity : AppCompatActivity() {
         dollar_image = findViewById(R.id.dollarimage)
         amount_text = findViewById(R.id.Amount)
     }
-
-
-
 
 }
