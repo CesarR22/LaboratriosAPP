@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Laboratorio05</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_movie">New Movie</string>
+    <string name="submit">Submit</string>
+    <string name="name">Name</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+    <string name="calification">Qualification</string>
+    <string name="fab_content_desc">+</string>
+    <string name="harry_potter_y_la_piedra_filosofal">Harry potter y la piedra filosofal</string>
+    <string name="star_warsepisodio_3_la_venganza_de_los_sith">Star Warsepisodio 3: la venganza de los Sith</string>
+</resources>
