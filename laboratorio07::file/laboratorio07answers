@@ -1,0 +1,34 @@
+R1//
+
+-Actualizaciones automáticas
+-Compatibilidad con el ciclo de vida
+-Compatibilidad con arquitecturas MVVM
+-Reducción de errores
+
+R2//
+
+LiveData utiliza el patrón de diseño Observador para notificar a los observadores, que suelen ser los componentes de la interfaz de usuario de Android, sobre los cambios en los datos.
+LiveData proporciona un contenedor de datos observable que puede contener cualquier tipo de dato. Los
+observadores (normalmente, una actividad, fragmento o ViewModel) pueden suscribirse a LiveData y recibir
+notificaciones cuando se produce un cambio en los datos contenidos dentro de ella.Practicamente
+LiveData utiliza el patrón de diseño Observador para mantener actualizados los componentes de la interfaz de usuario en tiempo real, mientras se encarga de la gestión de la suscripción y desuscripción de observadores de forma automática y segura.
+
+R3//
+
+android {
+    ...
+    dataBinding {
+        enabled = true
+    }
+}
+
+R4//
+
+DataBinding es una biblioteca de Android que permite enlazar (binding) datos entre el modelo de datos de una aplicación y la interfaz de usuario (UI) de una forma declarativa, eliminando gran parte del código repetitivo y propenso a errores.
+
+Ventajas:
+
+-Reducción del código
+-Menos propenso a errores
+-Mayor legibilidad del código
+

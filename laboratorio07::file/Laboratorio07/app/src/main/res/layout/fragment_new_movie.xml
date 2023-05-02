@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundLayout"
+        tools:context=".newMovieFragment">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/newMovie_title"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextMovieName"
+            android:layout_width="360dp"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginTop="@dimen/max_gap"
+            android:background="@color/cardLayout"
+            android:ems="10"
+            android:hint="@string/input1"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/editTextMovieCat"
+            android:layout_width="360dp"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:background="@color/cardLayout"
+            android:ems="10"
+            android:hint="@string/input2"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextMovieName" />
+
+        <EditText
+            android:id="@+id/editTextMovieDesc"
+            android:layout_width="360dp"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:background="@color/cardLayout"
+            android:ems="10"
+            android:hint="@string/input3"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextMovieCat" />
+
+        <EditText
+            android:id="@+id/editTextMovieQual"
+            android:layout_width="360dp"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:background="@color/cardLayout"
+            android:ems="10"
+            android:hint="@string/input4"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextMovieDesc" />
+
+        <Button
+            android:id="@+id/action_addMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/buttonColor"
+            android:hint="@string/button_text"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextMovieQual" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
