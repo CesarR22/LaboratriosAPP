@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Laboratorio05</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hp_calification_text_view">9.5</string>
+    <string name="first_movie_title">Harry Potter y La Pieda FIlosofal</string>
+    <string name="sw_calification">9.8</string>
+    <string name="movie2_title">Star Wars 3: La amenaza fantasma</string>
+    <string name="movie2_categorie">Ciencia Ficcion</string>
+    <string name="movie2_dec">en el personaje de Anakin Skywalker, quien esta siendo tenteado por el lado oscuro de la fuerza mientras el imperio galactico comienza a surgir. La trama tambien muestra la caida de la Republica Galactica y el ascenso del Emperador Palpatine</string>
+    <string name="button_text">SUBMIT</string>
+    <string name="newMovie_title">New Movie</string>
+    <string name="input1">Name</string>
+    <string name="input2">Category</string>
+    <string name="input3">Description</string>
+    <string name="input4">Calification</string>
+    <string name="billbooard_view_title">BILLBOARD</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">24sp</dimen>
+    <dimen name="medium_gap">16dp</dimen>
+    <dimen name="min_gap">8dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_height">140dp</dimen>
+    <dimen name="max_gap">24dp</dimen>
+    <dimen name="input_height">70dp</dimen>
+</resources>

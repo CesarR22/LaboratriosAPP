@@ -1,0 +1,10 @@
+Respuesta N`1
+
+*Su eficiencia y rendimiento
+*Está diseñada para manejar grandes conjuntos de datos y funciona mediante la creación y reutilización eficiente de vistas de lista.
+
+Respuesta N`2
+
+*Adapter: Es responsable de proporcionar los datos que se mostrarán en la RecyclerView.
+*ViewHolder:Es una clase que contiene una vista y se utiliza para reciclar vistas. 
+*LayoutManager:Es responsable de medir y ubicar las vistas dentro de la RecyclerView
