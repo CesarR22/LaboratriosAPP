@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        tools:layout="@layout/fragment_home"
+        android:label="home"
+        android:name="com.example.laboratorio09.HomeFragment"
+        >
+        <action
+            android:id="@+id/accion_home_coroutines"
+            app:destination="@+id/corutines" />
+        <action
+            android:id="@+id/accion_home_main"
+            app:destination="@+id/main" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/corutines"
+        tools:layout="@layout/fragment_coroutines"
+        android:label="coroutines"
+        android:name="com.example.laboratorio09.CoroutinesFragment"
+        >
+        <action
+            android:id="@+id/action_corutines_to_home2"
+            app:destination="@id/home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/main"
+        tools:layout="@layout/fragment_main_thread"
+        android:label="home"
+        android:name="com.example.laboratorio09.MainThreadFragment"
+        >
+        <action
+            android:id="@+id/action_main_to_home2"
+            app:destination="@id/home" />
+    </fragment>
+
+</navigation>

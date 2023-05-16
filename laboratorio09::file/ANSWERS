@@ -1,0 +1,36 @@
+//R1
+
+-Las coroutines son un mecanismo de programación que permite escribir código asíncrono de manera
+secuencial y estructurada en Kotlin.A diferencia de los hilos tradicionales, que son unidades de ejecución concurrentes a nivel de sistema operativo, las coroutines son unidades de ejecución cooperativas a nivel de lenguaje de programación. 
+
+Diferencias:
+-Estrucutra de control
+-Concurrencia cooperativa
+-Eficiencia de recursos
+
+//R2
+
+Capacidad de suspender momentáneamente la ejecución de una coroutine sin obstruir el main thread. 
+La suspensión se implementa mediante el uso de funciones y constructores especiales llamados funciones suspendidas. Estas funciones se definen con la palabra clave suspend en su firma y pueden contener puntos de suspensión utilizando funciones específicas como delay(), withContext(), suspendCancellableCoroutine(), entre otras.
+
+//R3
+
+La función de un Dispatcher es especificar en qué hilo (o hilos) se ejecutará una coroutine. Son sumamente útiles ya que existen tareas de Input/Output de red o de archivos , que no pueden realizarse en el hilo principal.
+
+Kotlin ofrece varios Dispatchers predefinidos que se pueden utilizar según los requisitos específicos de cada tarea:
+
+1-Dispatchers.Default: Este es el Dispatcher predeterminado y está diseñado para tareas computacionalmente intensivas o bloqueantes de E/S. Utiliza un grupo de hilos compartidos, lo que lo hace adecuado para cargas de trabajo de CPU moderadas.
+
+2-Dispatchers.IO: Este Dispatcher está optimizado para operaciones de E/S, como lectura/escritura de archivos, solicitudes de red, etc. Utiliza un grupo de hilos más grande que el predeterminado, lo que permite una mayor concurrencia para operaciones de E/S.
+
+3-Dispatchers.Main: Este Dispatcher se utiliza en aplicaciones Android y está diseñado para realizar operaciones en el hilo principal de la interfaz de usuario (UI). Se utiliza para realizar actualizaciones de la interfaz de usuario y otras tareas que deben ejecutarse en el hilo principal.
+
+4-Dispatchers.Unconfined: Este Dispatcher ejecuta la coroutine en el hilo actual hasta que se produce una suspensión. Luego, se reanudará en el hilo que continúa la ejecución, lo que puede variar dependiendo del código llamante. Se utiliza principalmente para casos especiales donde se necesita un control más fino sobre el contexto de ejecución.
+
+//R4
+
+async: Constructor utilizado para lanzar coroutines de manera asíncrona se obtiene el resultado
+utilizando el objeto Deferred. El resultado se obtiene mediante la función await(). Y es útil cuando se
+deben ejecutar tareas concurrentes y combinar los resultados.
+
+
