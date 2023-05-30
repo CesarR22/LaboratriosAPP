@@ -29,7 +29,7 @@ Kotlin ofrece varios Dispatchers predefinidos que se pueden utilizar según los 
 
 //R4
 
-async: Constructor utilizado para lanzar coroutines de manera asíncrona se obtiene el resultado
+async es un constructor utilizado para lanzar coroutines de manera asíncrona se obtiene el resultado
 utilizando el objeto Deferred. El resultado se obtiene mediante la función await(). Y es útil cuando se
 deben ejecutar tareas concurrentes y combinar los resultados.
 
